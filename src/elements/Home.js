@@ -1,14 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import CoverVideo from "../components/CoverVideo";
+const Section = styled.section`
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+`;
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
-    <div>
-      <h1>hola desde home</h1>
-      <button onClick={() => navigate("/lista")}>Lista de Comida</button>
-    </div>
+    <Section>
+      <CoverVideo />
+    </Section>
   );
 };
 
